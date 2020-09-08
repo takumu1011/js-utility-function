@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/index.js */ \"./modules/index.js\");\n\n\nlet dog = {\n  name: '犬',\n  age: 2,\n};\n\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'name'));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'gender'));\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/index.js */ \"./modules/index.js\");\n\n\nlet dog = {\n  name: '犬',\n  age: 2,\n};\nlet cat = {\n  name: '猫',\n};\n\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'name'));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'gender'));\n\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"](dog));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"](cat));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"]());\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -110,15 +110,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./modules/_size.js":
+/*!**************************!*\
+  !*** ./modules/_size.js ***!
+  \**************************/
+/*! exports provided: size */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"size\", function() { return size; });\nfunction size(obj) {\n  if (obj === undefined || obj === null) return 0;\n  return Object.keys(obj).length;\n}\n\n\n//# sourceURL=webpack:///./modules/_size.js?");
+
+/***/ }),
+
 /***/ "./modules/index.js":
 /*!**************************!*\
   !*** ./modules/index.js ***!
   \**************************/
-/*! exports provided: has */
+/*! exports provided: has, size */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_has.js */ \"./modules/_has.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"has\", function() { return _has_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"]; });\n\n\n\n\n//# sourceURL=webpack:///./modules/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_has.js */ \"./modules/_has.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"has\", function() { return _has_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"]; });\n\n/* harmony import */ var _size_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_size.js */ \"./modules/_size.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"size\", function() { return _size_js__WEBPACK_IMPORTED_MODULE_1__[\"size\"]; });\n\n\n\n\n\n//# sourceURL=webpack:///./modules/index.js?");
 
 /***/ })
 
