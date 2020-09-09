@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/index.js */ \"./modules/index.js\");\n\n\nlet dog = {\n  name: '犬',\n  age: 2,\n};\nlet cat = {\n  name: '猫',\n};\n\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'name'));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'gender'));\n\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"](dog));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"](cat));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"]());\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/index.js */ \"./modules/index.js\");\n\n\nlet dog = {\n  name: '犬',\n  age: 2,\n};\nlet cat = {\n  name: '猫',\n};\n\n//has\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'name'));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"](dog, 'gender'));\n//size\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"](dog));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"](cat));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"size\"]());\n//toMap\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"toMap\"](dog));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"toMap\"](cat));\nconsole.log(_modules_index_js__WEBPACK_IMPORTED_MODULE_0__[\"toMap\"]());\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -122,15 +122,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./modules/_toMap.js":
+/*!***************************!*\
+  !*** ./modules/_toMap.js ***!
+  \***************************/
+/*! exports provided: toMap */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toMap\", function() { return toMap; });\nfunction toMap(obj) {\n  if (obj === undefined || obj === null) return false;\n  const map = new Map();\n  let keys = Object.keys(obj);\n  for (let i = 0; i < keys.length; i++) {\n    let value = obj[keys[i]];\n    map.set(keys[i], value);\n  }\n  return map;\n}\n\n\n//# sourceURL=webpack:///./modules/_toMap.js?");
+
+/***/ }),
+
 /***/ "./modules/index.js":
 /*!**************************!*\
   !*** ./modules/index.js ***!
   \**************************/
-/*! exports provided: has, size */
+/*! exports provided: has, size, toMap */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_has.js */ \"./modules/_has.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"has\", function() { return _has_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"]; });\n\n/* harmony import */ var _size_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_size.js */ \"./modules/_size.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"size\", function() { return _size_js__WEBPACK_IMPORTED_MODULE_1__[\"size\"]; });\n\n\n\n\n\n//# sourceURL=webpack:///./modules/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_has.js */ \"./modules/_has.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"has\", function() { return _has_js__WEBPACK_IMPORTED_MODULE_0__[\"has\"]; });\n\n/* harmony import */ var _size_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_size.js */ \"./modules/_size.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"size\", function() { return _size_js__WEBPACK_IMPORTED_MODULE_1__[\"size\"]; });\n\n/* harmony import */ var _toMap_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_toMap.js */ \"./modules/_toMap.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"toMap\", function() { return _toMap_js__WEBPACK_IMPORTED_MODULE_2__[\"toMap\"]; });\n\n\n\n\n\n\n//# sourceURL=webpack:///./modules/index.js?");
 
 /***/ })
 

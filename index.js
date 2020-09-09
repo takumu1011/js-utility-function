@@ -15,3 +15,7 @@ console.log(util.has(dog, 'gender'));
 console.log(util.size(dog));
 console.log(util.size(cat));
 console.log(util.size());
+//toMap
+console.log(util.toMap(dog));
+console.log(util.toMap(cat));
+console.log(util.toMap());
