@@ -1,4 +1,4 @@
-export function size(obj) {
+export const size = (obj) => {
   if (obj === undefined || obj === null) return 0;
   return Object.keys(obj).length;
-}
+};

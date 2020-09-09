@@ -1,4 +1,4 @@
-export function toMap(obj) {
+export const toMap = (obj) => {
   if (obj === undefined || obj === null) return false;
   const map = new Map();
   let keys = Object.keys(obj);
@@ -7,4 +7,4 @@ export function toMap(obj) {
     map.set(keys[i], value);
   }
   return map;
-}
+};

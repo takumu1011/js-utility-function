@@ -1,21 +1,9 @@
-import * as util from './modules/index.js';
+import { has } from './modules/_has.js';
+import { size } from './modules/_size.js';
+import { toMap } from './modules/_toMap.js';
 
-let dog = {
-  name: '犬',
-  age: 2,
+export const Util = {
+  has,
+  size,
+  toMap,
 };
-let cat = {
-  name: '猫',
-};
-
-//has
-console.log(util.has(dog, 'name'));
-console.log(util.has(dog, 'gender'));
-//size
-console.log(util.size(dog));
-console.log(util.size(cat));
-console.log(util.size());
-//toMap
-console.log(util.toMap(dog));
-console.log(util.toMap(cat));
-console.log(util.toMap());
