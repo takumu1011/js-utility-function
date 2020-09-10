@@ -12,7 +12,7 @@
 
 ```javascript
 // import.
-import Util from 'js-scroll-effect-module';
+import Util from 'js-utility-function.js';
 ```
 
 ### Basic Use
