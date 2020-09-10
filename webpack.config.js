@@ -7,6 +7,7 @@ module.exports = {
     filename: 'js-utility-function.js',
     path: path.resolve(__dirname, 'dist'),
     library: 'Util',
+    libraryExport: 'default',
     libraryTarget: 'umd',
   },
 };

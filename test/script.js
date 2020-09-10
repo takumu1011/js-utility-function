@@ -1,4 +1,3 @@
-import { Util } from './../dist/js-utility-function.js';
 let dog = {
   name: '犬',
   age: 2,
